@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="margin-top: 80px;">Calculadora</h1>
+    <div class="content">
+        <h3>Escolha os horarios que deseja calcular</h3>
+        <input type="number" min="0" placeholder="Hora Inicial" id="horaInicial">
+        <input type="number" min="0" max="59" placeholder="Minuto Inicial" id="minInicial"><br>
+        <input type="number" min="0" placeholder="Hora Final" id="horaFinal">
+        <input type="number" min="0" max="59" placeholder="Minuto Final" id="minFinal"><br>
+        <h3>Escolha a operação</h3>
+        <button onclick="soma();">Soma</button>
+        <button onclick="sub();">Diferença</button>
+        <h3 id="r">Resultado</h3>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
